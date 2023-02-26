@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Recipe page</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://sebastoico.github.io/devChallenges_Recipe-page/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/sebastoico/devChallenges_Recipe-page">
       Solution
     </a>
     <span> | </span>
@@ -29,7 +29,6 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
-- [How to use](#how-to-use)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
@@ -37,22 +36,19 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+<div style="display:flex">
+  <img src="https://user-images.githubusercontent.com/108204749/221430009-0782017d-ae11-4681-8abe-13e5d00849b2.png" height="495px">
+  <img src="https://user-images.githubusercontent.com/108204749/221429995-c8c77ec3-5376-4c8c-818a-b5f75f1d12f3.png" height="495px">
+</div>
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+In this challenge, I put hands on using HTML and CSS to build an "Interior Consultant" page. Responsive design was added for better visualization. The demo can be seen in [demo](https://sebastoico.github.io/devChallenges_Recipe-page/).
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- HTML and CSS.
+- Google Fonts & Icons.
 
 ## Features
 
@@ -60,35 +56,14 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/TtUjDt19eIHxNQ4n5jps) was to build an application to complete the following user stories:
 
-- [x] User story: This is a completed user stories
-- [ ] User story: This is a incompleted user stories
-- [ ] User story: This is a incompleted 2nd user stories
-
-## How To Use
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
+- [x] User story: I can see a recipe with ingredients and instructions
+- [x] User story: I can select a checkbox if I have the ingredients
+- [x] User story: I can see the number of servings, baking times
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@sebastoico](https://github.com/sebastoico)
