@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  padding: 32px 3%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.main h1 {
+  margin: 0;
+  font-family: "Playfair Display";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+.main__description {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.main__description img {
+  margin-top: 3px;
+}
+.main__description p {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #4f4f4f;
+}
+.main__img img {
+  margin: 12px 0;
+  width: 100%;
+}
+.main__data {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.data {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: #333333;
+}
+.data--yields {
+  color: #f2994a;
+}
+.data .data__title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+.data__time {
+  display: flex;
+  justify-content: space-between;
+}
