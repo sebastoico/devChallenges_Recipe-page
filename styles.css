@@ -77,6 +77,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.recipe__description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 .recipe__ingredients {
   display: flex;
   flex-direction: column;
@@ -121,4 +126,55 @@ body {
 .recipe__ingredients span {
   font-style: italic;
   font-weight: 500;
+}
+.recipe__instructions {
+  color: #333333;
+}
+.recipe__instructions h2 {
+  font-family: "Playfair Display";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+.recipe__instructions ol {
+  padding: 28px 0 0;
+  list-style: none;
+  counter-reset: my-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.recipe__instructions li {
+  counter-increment: my-counter;
+  display: flex;
+  gap: 15px;
+}
+.recipe__instructions li::before {
+  content: counter(my-counter);
+  background: #f2994a;
+  min-width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: inline-block;
+  font-family: "Playfair Display";
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+.recipe__instructions p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.recipe__source {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #BDBDBD;
+}
+.recipe__source a {
+  text-decoration: none;
+  color: #BDBDBD;
 }
