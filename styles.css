@@ -4,6 +4,7 @@
 html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+  min-width: 375px;
 }
 body {
   padding: 32px 3%;
@@ -40,7 +41,14 @@ body {
   margin: 12px 0;
   width: 100%;
 }
-.main__data {
+
+.recipe {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.recipe__data {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -68,4 +76,49 @@ body {
 .data__time {
   display: flex;
   justify-content: space-between;
+}
+.recipe__ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+  color: #333333;
+}
+.recipe__ingredients h2 {
+  font-family: "Playfair Display";
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+.recipe__ingredients h3 {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+.recipe__ingredients ul {
+  padding: 0;
+  margin-top: 23px;
+}
+.recipe__ingredients li {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.recipe__ingredients input {
+  min-width: 21px;
+  min-height: 21px;
+  border: 1px solid #828282;
+  border-radius: 4px;
+}
+.recipe__ingredients label {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.recipe__ingredients span {
+  font-style: italic;
+  font-weight: 500;
 }
