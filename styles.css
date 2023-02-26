@@ -7,7 +7,7 @@ html {
   min-width: 375px;
 }
 body {
-  padding: 32px 3%;
+  padding: 32px 3% 0;
 }
 
 .main {
@@ -18,9 +18,9 @@ body {
 .main h1 {
   margin: 0;
   font-family: "Playfair Display";
-  font-size: 2.4rem;
+  font-size: clamp(2.4rem, 6.4vw, 4.8rem);
   font-weight: 700;
-  line-height: 3.2rem;
+  line-height: clamp(3.2rem, 8.5vw, 6.4rem);
 }
 .main__description {
   display: flex;
@@ -31,10 +31,11 @@ body {
   margin-top: 3px;
 }
 .main__description p {
+  max-width: 592px;
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 3.2vw, 1.4rem);
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: clamp(1.5rem, 4vw, 1.7rem);
   color: #4f4f4f;
 }
 .main__img img {
@@ -58,18 +59,18 @@ body {
   align-items: center;
   gap: 5px;
 
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.6vw, 1.4rem);
   font-weight: 500;
-  line-height: 1.2rem;
+  line-height: clamp(1.2rem, 3.2vw, 1.7rem);
   color: #333333;
 }
 .data--yields {
   color: #f2994a;
 }
 .data .data__title {
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 2.1vw, 1rem);
   font-weight: 700;
-  line-height: 1rem;
+  line-height: clamp(1rem, 2.6vw, 1.2rem);
   text-transform: uppercase;
   color: #bdbdbd;
 }
@@ -91,16 +92,16 @@ body {
 }
 .recipe__ingredients h2 {
   font-family: "Playfair Display";
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 4.8vw, 2.4rem);
   font-weight: 700;
-  line-height: 2.4rem;
+  line-height: clamp(2.4rem, 6.4vw, 3.2rem);
 }
 .recipe__ingredients h3 {
   font-family: "Playfair Display";
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 4.2vw, 1.8rem);
   font-weight: 400;
-  line-height: 2.1rem;
+  line-height: clamp(2.1rem, 5.6vw, 2.4rem);
 }
 .recipe__ingredients ul {
   padding: 0;
@@ -119,7 +120,7 @@ body {
   border-radius: 4px;
 }
 .recipe__ingredients label {
-  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 3.7vw, 1.6rem);
   font-weight: 400;
   line-height: 2.5rem;
 }
@@ -169,12 +170,51 @@ body {
 }
 .recipe__source {
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 3.2vw, 1.6rem);
   font-weight: 400;
   line-height: 150%;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 .recipe__source a {
   text-decoration: none;
-  color: #BDBDBD;
+  color: #bdbdbd;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+}
+footer p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  color: #828282;
+}
+footer a {
+  font-weight: 700;
+  color: #828282;
+}
+
+@media (min-width: 1024px) {
+  body {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .recipe {
+    flex-direction: row-reverse;
+    gap: 150px;
+  }
+  .recipe__data {
+    min-width: 132px;
+    height: fit-content;
+    padding: 42px 42px 17px;
+
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  .data__time {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
